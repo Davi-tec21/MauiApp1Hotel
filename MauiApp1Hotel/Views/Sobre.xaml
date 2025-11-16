@@ -5,40 +5,36 @@
              Title="Sobre"
              BackgroundColor="{StaticResource MidnightBlue}">
 
-    <VerticalStackLayout VerticalOptions="CenterAndExpand" 
-                         HorizontalOptions="Center"
-                         Spacing="30"
-                         Padding="30">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+        Spacing="30">
 
         <Label Text="MauiHotel App" 
-               FontSize="45" 
+               FontSize="30" 
                FontFamily="Kalam"
                TextColor="{StaticResource White}" 
                HorizontalOptions="Center" />
 
-        <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+        <VerticalStackLayout>
             <Label Text="Desenvolvido Por" 
                    FontSize="Subtitle" 
-                   TextColor="{StaticResource Primary}" 
+                   TextColor="{StaticResource Magenta}" 
                    HorizontalOptions="Center" />
 
             <Label Text="Davi Mendes" 
                    FontSize="Title" 
                    TextColor="{StaticResource White}"
-                   FontAttributes="Bold"
                    HorizontalOptions="Center" />
         </VerticalStackLayout>
 
         <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
             <Label Text="Ano de Desenvolvimento" 
                    FontSize="Subtitle" 
-                   TextColor="{StaticResource Primary}" 
+                   TextColor="{StaticResource Magenta}" 
                    HorizontalOptions="Center" />
 
             <Label Text="2025" 
                    FontSize="Title" 
                    TextColor="{StaticResource White}"
-                   FontAttributes="Bold"
                    HorizontalOptions="Center" />
         </VerticalStackLayout>
 
