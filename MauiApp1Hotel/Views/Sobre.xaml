@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1Hotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="{StaticResource MidnightBlue}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="Center"
+                         Spacing="30"
+                         Padding="30">
+
+        <Label Text="MauiHotel App" 
+               FontSize="45" 
+               FontFamily="Kalam"
+               TextColor="{StaticResource White}" 
+               HorizontalOptions="Center" />
+
+        <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+            <Label Text="Desenvolvedor(a)" 
+                   FontSize="Subtitle" 
+                   TextColor="{StaticResource Primary}" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="[Seu Nome Aqui]" 
+                   FontSize="Title" 
+                   TextColor="{StaticResource White}"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <BoxView HeightRequest="1" WidthRequest="200" Color="{StaticResource White}" />
+
+        <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+            <Label Text="Ano de Desenvolvimento" 
+                   FontSize="Subtitle" 
+                   TextColor="{StaticResource Primary}" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="2025" 
+                   FontSize="Title" 
+                   TextColor="{StaticResource White}"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <Label Text="Versão 1.0.0" 
+               FontSize="Small" 
+               TextColor="{StaticResource White}" 
+               Opacity="0.7"
+               VerticalOptions="EndAndExpand"
+               HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
