@@ -17,19 +17,17 @@
                HorizontalOptions="Center" />
 
         <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
-            <Label Text="Desenvolvedor(a)" 
+            <Label Text="Desenvolvido Por" 
                    FontSize="Subtitle" 
                    TextColor="{StaticResource Primary}" 
                    HorizontalOptions="Center" />
 
-            <Label Text="[Seu Nome Aqui]" 
+            <Label Text="Davi Mendes" 
                    FontSize="Title" 
                    TextColor="{StaticResource White}"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
         </VerticalStackLayout>
-
-        <BoxView HeightRequest="1" WidthRequest="200" Color="{StaticResource White}" />
 
         <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
             <Label Text="Ano de Desenvolvimento" 
@@ -44,11 +42,9 @@
                    HorizontalOptions="Center" />
         </VerticalStackLayout>
 
-        <Label Text="Versão 1.0.0" 
-               FontSize="Small" 
+        <Label Text="Versão 1.0" 
+               FontSize="30" 
                TextColor="{StaticResource White}" 
-               Opacity="0.7"
-               VerticalOptions="EndAndExpand"
                HorizontalOptions="Center" />
 
     </VerticalStackLayout>

@@ -64,7 +64,9 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar"  />
+                <Button Text="Sobre o Aplicativo" 
+                      Margin="0, 20, 0, 0"
+                      Clicked="OnSobreButtonClicked"/>
 
             </VerticalStackLayout>
         </Frame>
