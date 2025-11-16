@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1Hotel.Views.Sobre"
              Title="Sobre"
-             BackgroundColor="{StaticResource MidnightBlue}">
+             BackgroundColor="{StaticResource Black}">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
         Spacing="30">
@@ -11,7 +11,7 @@
         <Label Text="MauiHotel App" 
                FontSize="30" 
                FontFamily="Kalam"
-               TextColor="{StaticResource White}" 
+               TextColor="{StaticResource Magenta}" 
                HorizontalOptions="Center" />
 
         <VerticalStackLayout>
@@ -40,8 +40,14 @@
 
         <Label Text="Versão 1.0" 
                FontSize="30" 
-               TextColor="{StaticResource White}" 
+               TextColor="{StaticResource Magenta}" 
                HorizontalOptions="Center" />
+
+        <Button Text="Voltar"
+        HorizontalOptions="Center"
+        BackgroundColor="White"
+                TextColor="Magenta"
+        Clicked="Button_Clicked"/>
 
     </VerticalStackLayout>
 </ContentPage>

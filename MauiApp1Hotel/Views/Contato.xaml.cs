@@ -1,16 +1,15 @@
 namespace MauiApp1Hotel.Views;
 
-public partial class HospedagemContratada : ContentPage
+public partial class Contato : ContentPage
 {
-    public HospedagemContratada()
-    {
-        InitializeComponent();
-    }
+	public Contato()
+	{
+		InitializeComponent();
+	}
 
-    private void Button_Clicked(object sender, EventArgs e)
-    {
 
-        {
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
 
             try
             {
@@ -20,7 +19,5 @@ public partial class HospedagemContratada : ContentPage
             {
                 DisplayAlert("Ocorreu um Problema", ex.Message, "OK");
             }
-
         }
     }
-}

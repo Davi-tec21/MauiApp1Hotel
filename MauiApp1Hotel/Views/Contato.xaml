@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1Hotel.Views.Contato"
+             Title="Contato"
+   NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Spacing="30"
+                         Padding="30">
+
+        <Label Text="Hotel Night Star"  
+               FontSize="35"  
+               FontFamily="Kalam"
+               TextColor="{StaticResource Magenta}"  
+               HorizontalOptions="Center" />
+
+        <Label Text="Fale Conosco" 
+               FontSize="Subtitle" 
+               TextColor="{StaticResource White}"
+               HorizontalOptions="Center" />
+
+        <VerticalStackLayout Spacing="20">
+
+            <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+                <Label Text="Telefone" 
+                       FontSize="Subtitle" 
+                       TextColor="{StaticResource Magenta}"  
+                       HorizontalOptions="Center" />
+                <Label Text="(11) 5555-1254" 
+                       FontSize="Title" 
+                       TextColor="{StaticResource Magenta}" 
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+                <Label Text="E-mail" 
+                       FontSize="Subtitle" 
+                       TextColor="{StaticResource Magenta}" 
+                       HorizontalOptions="Center" />
+                <Label Text="reservas@HotelNightStar.com" 
+                       FontSize="Title" 
+                       TextColor="{StaticResource Magenta}"
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+                <Label Text="Localização" 
+                       FontSize="Subtitle" 
+                       TextColor="{StaticResource Magenta}" 
+                       HorizontalOptions="Center" />
+                <Label Text="Rua das Esmeralda, 101 - Jardim das Tulipas, SP" 
+                       FontSize="Body"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="{StaticResource Magenta}" 
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center"
+                BackgroundColor="{StaticResource White}" 
+                TextColor="Magenta" 
+                Clicked="Button_Clicked_1"/>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -4,14 +4,14 @@
              x:Class="MauiApp1Hotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
     NavigationPage.HasNavigationBar="False"
-    BackgroundColor ="{StaticResource MidnightBlue}">
+    BackgroundColor ="{StaticResource OffBlack}">
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
         Padding="10">
-        <Label Text="Cálculo da Diária"
+        <Label Text=" Hotel Night Star - Cálculo da Diária"
             FontFamily="Kalam"
                FontSize="50"
-               TextColor="{StaticResource White}"/>
+               TextColor="{StaticResource Magenta}"/>
 
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -22,7 +22,7 @@
                            Text="Adultos:" />
 
                     <Label Grid.Row="0" Grid.Column="1"
-                    TextColor="{StaticResource Primary}"
+                    TextColor="{StaticResource Magenta}"
                      Text="{Binding Value}"
                            BindingContext="{x:Reference stp_Adultos}"/>
 
@@ -36,7 +36,7 @@
                             Text="Crianças:" />
                     
                     <Label Grid.Row="1" Grid.Column="1"
-                        TextColor="{StaticResource Primary}"
+                        TextColor="{StaticResource Magenta}"
                         Text="{Binding Value}"
                           BindingContext="{x:Reference stp_Crianças}"/>
 
@@ -50,23 +50,46 @@
 
                 <Label Text="Escolha a sua Suíte"/>
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"/>
+                        Title="Selecione sua Acomodação"
+                ItemDisplayBinding ="{Binding Descricao}"/>
+                
                 <Frame Padding="10"
                        Margin="10">
                     <VerticalStackLayout>
                         <Label Text="Período da Estadia"/>
                         <HorizontalStackLayout>
                             <Label Text="Check-in"/>
-                            <DatePicker x:Name="dtcpk_Checkin"
+                            <DatePicker x:Name="dtpck_Checkin"
+                              DateSelected="Dtpck_Checkin_DateSelected"
                              Format="dd/MM/yyyy"/>
+                            </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Check-out:" />
+                            <DatePicker x:Name="dtpck_Checkout"
+                                        Format="dd/MM/yyyy" />
+
 
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
+                <Button Text="Avançar" Clicked="Button_Clicked"
+                 BackgroundColor="Black"
+                 TextColor="Magenta"/>
+
+                <Button Text="Contato" 
+                 Margin="10"
+                  BackgroundColor="Black"
+                 TextColor="Magenta"
+                 Clicked="Button_Clicked_3" />
 
                 <Button Text="Sobre o Aplicativo" 
-                      Margin="0, 20, 0, 0"
-                      Clicked="OnSobreButtonClicked"/>
+                 Margin="20"
+                 BackgroundColor="Black"
+                 TextColor="Magenta"
+                 Clicked="Button_Clicked_1" />
+
+                
 
             </VerticalStackLayout>
         </Frame>
